@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Asset/css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    /!* navbar */
+    <nav class="navbar navbar-expand-custom navbar-mainbg pr-4 nav-1 fixed-top">
+        <a class="navbar-brand navbar-logo pr-4 ml-5" x href="#">MD.MOSTAFIZUR RAHMAN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-center mr-5">
+                <div class="hori-selector">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <li class="nav-item" id="nav-about">
+                    <a class="nav-link" href="javascript:void(0);" data-url="#home" onclick="activateLink(this)"><i
+                            class="fas fa-user"></i>Home</a>
+                </li>
+                <li class="nav-item" id="nav-about">
+                    <a class="nav-link" href="javascript:void(0);" data-url="#about" onclick="activateLink(this)"><i
+                            class="fas fa-user"></i>About</a>
+                </li>
+                <li class="nav-item" id="nav-Portfolio">
+                    <a class="nav-link" href="javascript:void(0);" data-url="#Portfolio" onclick="activateLink(this)"><i
+                            class="fas fa-briefcase"></i>Portfolio</a>
+                </li>
+                <li class="nav-item" id="nav-Services">
+                    <a class="nav-link" href="javascript:void(0);" data-url="#Services" onclick="activateLink(this)"><i
+                            class="fas fa-cogs"></i>Services</a>
+                </li>
+                
+                <li class="nav-item" id="nav-contact">
+                    <a id="openFormBtn" class="nav-link" href="javascript:void(0);" data-url="#contact" onclick="activateLink(this)">Contact Us</a>
+                        <div class="container">
+                            <div id="popupForm" class="popup-form">
+                                <div class="form-container">
+                                    <span class="close-btn" id="closeFormBtn">&times;</span>
+                                    <h2 >Contact Us</h2>
+                                    <form class="row d-flex justify-content-center aline-items-center" id="contactForm">
+                                        <div class="col-6 form-logo-1">
+                                            <img src="Asset/icon/web-developer.svg" alt="Logo" class="form-logo">
+                                        </div>
+                                       <div class="col-6 from-1 text-start">
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" name="name" required>
+                        
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required>
+                        
+                                        <label for="message">Message:</label>
+                                        <textarea id="message" name="message" required></textarea>
+                        
+                                        <button type="submit">Submit</button>
+                                       </div>
+                                    </form>
+                                    <div id="thankYouMessage" class="thank-you-message">
+                                        <p>Thank you for contacting us!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    </section>
+
+
+    !/* Home */
+
+    <section id="home">
+        <div id="particles-js">
+            <span class="title-1">
+                <h2>Hello I<b class="title-2">'</b>m</h2>
+                <h1>Mostafizur Rahman</h1>
+                <p>Web Designer | Front-End Developer</p>
+                <button id="downloadButton">Download CV <i class="bi bi-arrow-down-circle"></i></button>
+
+            </span>
+
+
+        </div>
+    </section>
+
+
+
+    <!--About Sections -->
+    <section class=" about-1" id="about">
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6 img-1">
+                    <img src="Asset/Img/bg1.png " alt="img">
+                </div>
+                <div class="col-6 about-text">
+                    <h1>About</h1>
+                    <p>I'm Md Mostafizur Rahman Masum, a Web Designer and Front-End Developer with a passion for
+                        creating user-friendly, visually appealing websites. With a background in Computer Science, I
+                        specialize in building responsive and modern web interfaces using tools like HTML, CSS,
+                        Bootstrap-5, JavaScript, JQuery and React. I'm dedicated to turning ideas into beautiful,
+                        functional websites.</p>
+                    <ul class="about-me-detail">
+                        <li>#javascript</li>
+                        <li>#jQuery</li>
+                        <li>#react.js</li>
+                        <li>#html</li>
+                        <li>#css</li>
+                        <li>#bootstrap</li>
+                        <li>#tailwind</li>
+                        <li>#git</li>
+                        <li>#github</li>
+                        <li>#aws</li>
+                        <li>#terminal</li>
+
+                        <li>#figma</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!--Portfolio Sections -->
+    <section id="Portfolio">
+        <div class="container">
+            <div class="row d-flex justify-content-center mx-auto justify-items-center Portfolio mt-5 pt-5">
+                <h1 class="tittle">Portfolio</h1>
+                <a href="" class=" box col-3 Portfolio-1">
+                    <img src="Asset/Img/Portfolio.jpg" alt="">
+
+                </a>
+                <a href="" class=" box col-3 Portfolio-1 ">
+                    <img src="Asset/Img/Portfolio.svg" alt="">
+                </a>
+                <a href="" class=" box col-3 Portfolio-1">
+                    <div class="prixima">
+                        <img src="Asset/Img/favicon.ico" alt="">
+                    </div>
+                    <div class="text-1">
+                        <h1>Prixima</h1>
+                    </div>
+                </a>
+                <a href="" class=" box col-3 Portfolio-1">
+                    <img src="Asset/Img/Portfolio.png" alt="">
+                </a>
+                <a href="" class=" box col-3 Portfolio-1">
+                    <h1>...</h1>
+                </a>
+                <a href="" class=" box col-3 Portfolio-1">
+                    <h1>...</h1>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Services Section -->
+    <section id="Services">
+        <div class="container">
+            <div class="row mt-5 pt-5 d-flex justify-content-center aline-items-center">
+                <h1 class="tittle">Services</h1>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services ">
+                    <div class="col-5 Services-1">
+                        <img src="Asset/icon/designer.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Web Design</h1>
+                        <p>I create custom, responsive website designs that are visually appealing and tailored to your brand. My focus is on aesthetics, functionality, and user experience across all devices.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services">
+                    <div class="col-5 Services-1"> <img src="Asset/icon/web-developer.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Front-End Development</h1>
+                        <p> I develop clean, efficient, and interactive user interfaces using modern technologies like HTML, CSS, and JavaScript. My code ensures seamless performance and cross-browser compatibility.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services">
+                    <div class="col-5 Services-1">
+                        <img src="Asset/icon/marketing.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Marketing</h1>
+                    <p>I craft digital marketing strategies that boost your online presence, including SEO, content creation, and social media integration, helping you engage your target audience effectively.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services">
+                    <div class="col-4 Services-1">
+                        <img src="Asset/icon/ms-word.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Word Solutions</h1>
+                    <p> I offer advanced data analysis and document creation services in Word. From complex spreadsheets to professional reports, I streamline your workflow with precision.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services">
+                    <div class="col-4 Services-1">
+                        <img src="Asset/icon/ms-excel.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Excel Solutions</h1>
+                    <p> I offer advanced data analysis and document creation services in Excel. From complex spreadsheets to professional reports, I streamline your workflow with precision.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-12 box Services">
+                    <div class="col-4 Services-1">
+                        <img src="Asset/icon/adobe-photoshop.svg" alt="">
+                    </div>
+                    <div class="col-7 Services-2">
+                        <h1>Photoshop Services</h1>
+                    <p>I deliver high-quality image editing and graphic design using Photoshop. Whether it's photo retouching or custom graphics, I ensure your visuals are polished and on-brand.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+  
+<!-- Contact Section -->
+    <section id="contact">
+
+    
+   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="Asset/js/particles.js"></script>
+        <script src="Asset/js/app.js"></script>
+        <script src="Asset/js/bootstrap.bundle.min.js"></script>
+        <script src="Asset/js/main.js"></script>
+
+</body>
+
+</html>
